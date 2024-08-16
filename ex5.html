@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            overflow-x: hidden;
+        }
+        header:nth-child(1){
+            position: sticky;
+            top: 0;
+        }
+        .nav{
+            border: 2px solid pink;
+            width: 100vw;
+            height: 80px;
+            background-color: pink;
+        }
+        .box1{
+            width: 500px;
+            height: 500px;
+            margin: 70px;
+            background-color: orange;
+        }
+        .box2{
+            width: 500px;
+            height: 500px;
+            margin: 70px;
+            background-color: rgb(36, 103, 237);
+        }
+        .cont{
+            display: flex;
+            justify-content: center;
+            background-color: green;
+            width: 100vw;
+        }
+        .text{
+            display: inline-block;
+            margin: 100px 500px;
+            padding: 60px 20px;
+            font-size: 24px;
+            text-align: center;
+            border: 2px solid black;
+            border-radius:50px;
+        }
+        .foot{
+            border: 2px solid yellow;
+            height: 80px;
+            width: 100vw;
+            background-color: yellow;
+        }
+        .logo{
+            position: fixed;
+            bottom: 30px;
+            left: 1450px;
+            height: 60px;
+            width: 60px;
+            border: 2px palevioletred;
+            border-radius: 30px;
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav"></div>
+    </header>
+
+    <main>
+        <div class="cont">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+
+        <div class="text">
+            Welcome to this Sigma Web Development Express
+        </div>
+        <div class="logo"></div>
+    </main>
+
+    <footer>
+        <div class="foot"></div>
+    </footer>
+</body>
+</html>

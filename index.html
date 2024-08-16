@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <table>
+        <caption>Student's Details</caption>
+        <thead>
+            <tr>
+                <th>Roll No.</th>
+                <th>Name</th>
+                <th>Subject</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Lucky</td>
+                <td>Maths</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Pihu</td>
+                <td>Science</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>3</td>
+                <td>Rohit</td>
+                <td>Physics</td>
+            </tr>
+        </tfoot>
+    </table>
+    <ul type="square">
+        <li>Pihu</li>
+        <li>Pihu</li>
+        <li>Pihu</li>
+    </ul>
+    <ol type="a">
+        <li>Physics</li>
+        <li>Chemistry</li>
+        <li>Maths</li>
+    </ol>
+    <h1>Login</h1>
+    <form action="post">
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="username" placeholder="Enter your name" autofocus>
+        <div>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subcsribe to my Newsletter</label>
+        </div>
+        <div>
+            <label for="comment">Enter your Text here: </label><br>
+            <textarea name="comment" id="comment" rows="4" cols="50"></textarea>
+        </div>
+        <div>
+            <select name="fruits" id="fruits">
+                <option value="Apple">Apple</option>
+                <option value="Banana">Banana</option>
+                <option value="Cherry">Cherry</option>
+            </select>
+        </div>
+    </form>
+    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, ratione.</span>
+</body>
+
+</html>
