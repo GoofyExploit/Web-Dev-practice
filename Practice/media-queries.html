@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        body{
+            background-color: pink;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            margin-top: 150px;
+            box-sizing: border-box;
+        }
+        .boxes{
+            display: flex;
+            justify-content: center;
+        }
+        .box{
+            font-size: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 344px;
+            height: 344px;
+            border: 2px solid black;
+            margin: 10px;
+            background-color: aquamarine;
+            text-align: center;
+            padding-top: 150px;
+            box-sizing: border-box;
+            flex-shrink: 0; 
+            flex-basis: auto; 
+        }
+        @media only screen and (max-width: 700px){
+            body{
+                background-color: red;
+            }
+            .boxes{
+                flex-direction: column;
+            }
+            .box{
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            margin-top: 50px;
+            height: 80vh;
+            width: 800px;
+            border: none;
+            background-color: aquamarine;
+        }
+        .box{
+            margin: 20px;
+            height: 100px;
+            width: 100px;
+            border: none;
+            animation-name: Cube;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate-reverse;
+            /* animation-fill-mode: backwards; */
+
+        }
+        @keyframes Cube {
+            0%{
+                background-color: purple;
+            }
+            20%{
+                transform: translate(200px);
+            }
+            50%{
+                transform: translateY(300px);
+            }
+            75%{
+                transform:rotate(50deg)
+            }
+            100%{
+                background-color: pink;
+                transform: translateX(500px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

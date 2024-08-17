@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .landscape{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-color: greenyellow;
+            border: none;
+        }
+        .ball{
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            border-radius: 70px;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            animation: ball-x 2s linear infinite, ball-y 1s ease-out infinite alternate-reverse;
+        }
+        @keyframes ball-y {
+            from{
+                bottom: 0%;
+            }
+           
+            to{
+                bottom: 100%;
+            }
+        }
+        @keyframes ball-x {
+            from{
+                left: 0%;
+            }   
+            to{
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="landscape">
+        <div class="ball">
+        </div>
+    </div>
+</body>
+</html>

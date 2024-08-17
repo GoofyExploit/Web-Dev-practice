@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Martel Sans"
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    position: relative;
+    background-image: url("Images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    height: 70vh;
+}
+
+.main .box {
+    position: absolute;
+    top: 0;
+    height: 70vh;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 60vw;
+    margin: auto;
+    height: 100px;
+    align-items: center;
+    padding: 16px 0;
+}
+
+nav img {
+    position: relative;
+    z-index: 1;
+    width: 130px;
+}
+
+nav button {
+    position: relative;
+    z-index: 1;
+}
+
+.hero {
+    color: white;
+    display: flex;
+    height: calc(100% - 100px);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+    position: relative;
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.seperation {
+    height: 8px;
+    background-color: rgb(82, 82, 82);
+}
+
+select {
+    padding: 3px 8px;
+    font-weight: 400;
+    background-color: rgba(23, 23, 23, 0.7);
+    color: white;
+    border: 1px solid rgba(246, 238, 238, 0.5);
+    ;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    background-color: rgba(23, 23, 23, 0.7);
+    color: white;
+    border: 1px solid rgba(246, 238, 238, 0.5);
+    ;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main input {
+    border-radius: 5px;
+    padding: 7px 101px 8px 14px;
+    font-size: 12px;
+    font-weight: 900;
+    border: 1px solid rgba(246, 238, 238, 0.5);
+    background-color: rgba(23, 23, 23, 0.7);
+    color: white;
+
+}
+
+.red-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 24px;
+    font-size: 20px;
+}
+
+.red-btn-sm {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    height: 500px;
+    align-items: center;
+    margin: auto;
+    color: white;
+}
+
+.secImage img {
+    width: 400px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImage video {
+    position: absolute;
+    width: 400px;
+    top: 51px;
+    right: 0;
+}
+
+.secImage {
+    position: relative;
+}
+
+section.first div {
+    display: flex;
+    flex-direction: column;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+    font-family: "Martel Sans", sans-serif;
+}
+
+section.first>div :nth-child(2) {
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+section.third .secImage video {
+    width: 250px;
+    left: 80px;
+}
+
+.faq h2{
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    font-family: "Martel Sans";
+    padding: 100px 20px 20px 20px;
+}
+.faqbox{
+    display: flex;
+    padding: 24px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Martel Sans";
+    background-color: #323232;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 80vw;
+    cursor: pointer;
+    transition: all 0.8 ease-in-out;
+}
+.faqbox img{
+    width: 30px;
+}
+.faq{
+    background-color: black;
+    color: white;
+}
+
+.faqbox:hover{
+    background-color: #414141;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    color: white;
+}
+
+.footer a{
+    color: white;
+
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-family: "Martel Sans";
+    gap: 23px; 
+}
+
+footer{
+    padding: 14px;
+    font-size: 14px;
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+}
+footer .questions{
+    margin: 2px 30vw;
+    margin: auto;
+    padding: 30px 0;
+}
