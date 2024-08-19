@@ -4,8 +4,7 @@ let a = parseFloat(prompt("Enter 1st number"));
 let b = parseFloat(prompt("Enter 2nd number"));
 function faulty_calc(a, b) {
     if (Math.random() < 0.1) {
-        let op = prompt("What would you like to do: 1.Additon 2.Multiplication 3.Subtraction 4.Division")
-        let operator = parseFloat(op);
+        let op = parseFloat(prompt("What would you like to do: 1.Additon 2.Multiplication 3.Subtraction 4.Division"));
         switch (operator) {
             case 1:
                 return a - b;
