@@ -1,4 +1,4 @@
-// Business name generator
+// Business name generator:
 
 /*
 Adjectives: Crazy, Amazing, Fire
