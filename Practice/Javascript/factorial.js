@@ -2,7 +2,7 @@
 /*
 let num = 6;
 function factorial(number){
-    let c = Array.from(Array(number+1).keys())
+    let c = Array.from(Array(number+1).keys()) //this is used to generate an array according to the given number
     let arr = c.slice(1,).reduce((a,b) => {
         return a*b
     })
