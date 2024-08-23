@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav ul li {
+            list-style: none;
+            margin: 20px;
+            padding: 20px 80px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .ruler {
+            height: 0.1px;
+            border: 1px solid black;
+        }
+
+        .container .box {
+            height: 43px;
+            width: 43px;
+            margin: 20px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contacts</li>
+        </ul>
+    </div>
+    <div class="ruler"></div>
+
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>
+    <script>
+        // document.body.firstElementChild.children[0].firstElementChild.style.color = "red";
+        document.body.querySelector(".container").firstElementChild.style.backgroundColor = "green";
+        document.body.querySelector(".container").lastElementChild.style.backgroundColor = "green";
+        let lis = document.body.querySelector(".nav").querySelectorAll("li")
+        lis.forEach(li => {
+            li.style.color = "red";
+        });
+
+        let input;
+        let array = []
+        for (let i = 0; i <= 3; i++) {
+            input = parseInt(prompt("Enter a number"))
+            array.push(input)
+            if (input == "0") {
+                alert("You entered 0")
+                break;
+            }
+        }
+
+        let divisible_by_10 = array.filter(num => num % 10 === 0);
+        console.log(divisible_by_10)
+        console.log(array)
+        let square = array.map(array => {
+            return array * array;
+        })
+        console.log(square)
+    </script>
+</body>
+
+</html>
