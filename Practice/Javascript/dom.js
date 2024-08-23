@@ -1,12 +1,12 @@
-function rand(){
-    let colors = ["green", "red", "yellow", "pink", "maroon"];
-    let elements = Array.from(document.body.children); // convert HTMLCollection to array
-    
-    if (elements.length > 0) {
-        elements.forEach(element => {
-            let randomColorIndex = Math.floor(Math.random() * colors.length);
-            element.style.backgroundColor = colors[randomColorIndex];
-        });
-    }
+let boxes = document.querySelector(".container").children
+
+function getRandomColor(){
+    let val1 = Math.ceil(0 + Math.random() * 255);
+    let val2 = Math.ceil(0 + Math.random() * 255);
+    let val3 = Math.ceil(0 + Math.random() * 255);
+    return `rgb(${val1},${val2},${val3})`
 }
-rand();
+Array.from(boxes).forEach(e=> {
+    e.style.backgroundColor = getRandomColor()
+    e.style.color = getRandomColor()
+});
