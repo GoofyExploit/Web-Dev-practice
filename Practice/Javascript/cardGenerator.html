@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Generator</title>
+    <style> 
+        body{
+            display: flex;
+            justify-content: space-between;
+        }
+        .container{
+            display: flex;
+            height: 120px;
+            width: 850px;
+            background-color: #0F0F0F;
+            justify-content: flex-start;
+            align-items: center;
+
+        }
+        .card{
+            display:flex;
+            flex-direction: column;
+            margin: -2px -24px -2px -55px;
+        }
+        
+        .container img{
+            display: grid;
+            margin: 2px 15px;
+            border: 2px solid #0F0F0F;
+            border-radius: 10px;
+            color: transparent;
+        }
+        .duration{
+            position: relative;
+            border: 2px solid transparent;
+            border-radius: 2px;
+            background-color: #1f1f1f8f;
+            color: white;
+            font-size: 10px;
+            font-family: "Arial";
+            padding: 2px;
+            bottom: -26px;
+            left: -62px;
+        }
+        .title{
+            font-size: 12px;
+            font-family: "Roboto","Arial",sans-serif;
+            margin: -20px -2px -25px 18px;
+            color: white;
+        }
+        .info{
+            display: flex;
+            justify-content: flex-start;
+        }
+        .info ul {
+            display: flex;
+            margin: 27px -32px;
+        }
+        
+        .info ul li{
+            font-size: 12px;
+            font-family: "Roboto","Arial",sans-serif;
+            margin: 2px 8px;
+            color: grey;
+            padding: 1px;
+        }
+        .cName{
+            list-style: none;
+        }
+        button{
+            background-color: yellowgreen;
+            border: 2px solid yellowgreen;
+            border-radius: 7px;
+            padding: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="hqdefault.webp" alt="thumbnail">
+        <div class="duration">
+            10:00
+        </div>
+        <div class="card">
+            <div class="title">
+                <h3>Installing VS Code & How Websites Work | Sigma Web Development Course Tutorial #1</h3>
+            </div>
+            <div class="info">
+                <ul>
+                    <li class="cName">CodeWithHarry</li>
+                    <li>727K views</li>
+                    <li>2X months ago</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="button">
+        <button>Add Card</button>
+    </div>
+
+    <script src="cardGen.js"></script>
+</body>
+</html>
