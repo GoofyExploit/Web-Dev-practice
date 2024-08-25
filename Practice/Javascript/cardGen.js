@@ -1,19 +1,18 @@
+let title = prompt("Enter Title")
+let cName = prompt("Enter Channel Name")
+let views = prompt("Enter Views")
+let monthsOld = prompt("How old is your video in months")
+let duration = prompt("Enter duration of the video")
+let viewstr
 
 function createCard() {
-    let title = prompt("Enter Title")
-    let cName = prompt("Enter Channel Name")
-    let views = prompt("Enter Views")
-    let monthsOld = prompt("How old is your video in months")
-    let duration = prompt("Enter duration of the video")
-
-    let viewstr
-    if(views < 1000000){
-        viewstr = views/1000 + "K"
+    if (views < 1000000) {
+        viewstr = views / 1000 + "K"
     }
-    else if(views > 1000000){
-        viewstr = views/1000000 + "M"
-    }else{
-        viewstr = views/1000 + "K"
+    else if (views > 1000000) {
+        viewstr = views / 1000000 + "M"
+    } else {
+        viewstr = views / 1000 + "K"
     }
 
     if (title) {
@@ -53,5 +52,29 @@ function createCard() {
     }
 
 }
+
+document.getElementById('addCardButton').addEventListener('click', function () {
+    const cardContainer = document.getElementById('cardContainer');
+    const newCard = document.createElement('div');
+    newCard.className = 'container';
+    newCard.innerHTML = `
+            <img src="hqdefault.webp" alt="thumbnail">
+            <div class="duration">${duration}</div>
+            <div class="card">
+                <div class="title">
+                    <h3>${title}</h3>
+                </div>
+                <div class="info">
+                    <ul>
+                        <li class="cName">${cName}</li>
+                        <li>${viewstr}</li>
+                        <li>${monthsOld} months ago</li>
+                    </ul>
+                </div>
+            </div>
+        `;
+    cardContainer.appendChild(newCard);
+});
+
 
 createCard()
