@@ -78,7 +78,7 @@
 // let book1 = new Book('Harry Potter', 'JK Rowling', true)
 // let book2 = new Book('Metamorphosis', 'Kafka', false)
 // let book3 = new Book('Murder on the Orient Express', 'Agastha Krystie', true)
-
+// .
 class Rectangle{
     constructor(width, height){
         this.width = width
